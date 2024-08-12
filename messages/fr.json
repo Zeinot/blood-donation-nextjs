@@ -37,6 +37,8 @@
     "Not_Found": "Aucun post trouvé."
   },
   "Dashboard": {
-    "headingDashboard": "headingDashboard"
+    "headingDashboard": "Tableau de bord",
+    "Edit Post": "Modifier le poste",
+    "Create Post": "Créer un poste"
   }
 }

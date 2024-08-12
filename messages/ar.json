@@ -35,5 +35,10 @@
     "Location": "التمركز",
     "Date": "تاريخ",
     "Not_Found": "لم يتم العثور على أي مشاركات."
+  },
+  "Dashboard": {
+    "headingDashboard": "لوحة القيادة",
+    "Edit Post": "تحرير الموقف",
+    "Create Post": "إنشاء مشاركة"
   }
 }
