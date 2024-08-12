@@ -15,6 +15,7 @@ import NavLink from "./NavLink";
 import MobileNavLink from "./NavLinkMobile";
 import DashboardShellHeading from "./DashboardShellHeading";
 import { getLocale } from "next-intl/server";
+import LangSwap from "@/app/_HomePageComponents/LangSwap";
 export default async function DashboardShell({
   children,
 }: Readonly<{
@@ -39,7 +40,6 @@ export default async function DashboardShell({
     { name: dashboardName, href: `/${locale}/dashboard` },
     { name: createName, href: `/${locale}/dashboard/create` },
   ];
- 
 
   return (
     <div className="h-full bg-gray-100">
@@ -51,6 +51,7 @@ export default async function DashboardShell({
                 <div className="border-b border-gray-700">
                   <div className="flex h-16 items-center justify-between px-4 sm:px-0">
                     <div className="flex items-center">
+                      {" "}
                       <div className="flex-shrink-0">
                         <Link href="/">
                           {" "}
@@ -61,13 +62,20 @@ export default async function DashboardShell({
                           />
                         </Link>
                       </div>
-                      <div className="hidden md:block">
+              
+                     <div className="hidden md:block">
                         <div className="ml-10 flex items-baseline space-x-4">
                           {navigation.map((item) => (
-                            <NavLink key={item.name} item={item}></NavLink>
+                    
+                              <NavLink key={item.name} item={item}></NavLink>
+               
                           ))}
+                           <div className="self-center"><LangSwap /></div>
                         </div>
+                      
                       </div>
+                     
+                    
                     </div>
 
                     <div className="-mr-2 flex md:hidden">

@@ -51,5 +51,13 @@
       "Update": "تحديث",
       "Create": "أحدث"
     }
+  }, "browse": {
+    "Browse" : "تصفح",
+    "City" : "مدينة",
+    "Type" : "يكتب",
+    "Contact" : "اتصال",
+    "Criterias" : "المعايير",
+    "Location" : "موقع",
+    "Date" : "تاريخ"
   }
 }

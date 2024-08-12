@@ -100,13 +100,16 @@ export default function Hero({ locale }: { locale: string }) {
                     </Link>
                   ))}
                 </div>
-                <div className="py-6">
-                  <Link
+                <div className="py-6 flex justify-between">
+                 <div className="flex flex-col justify-center">
+                 <Link
                    href={`/${locale}/dashboard`}
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    Dashboard
+                   { t("Dashboard")} 
                   </Link>
+                 </div>
+                  <LangSwap />
                 </div>
               </div>
             </div>

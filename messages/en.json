@@ -51,5 +51,14 @@
       "Uodate": "Update",
       "Create": "Create"
     }
+  },
+  "browse": {
+    "Browse" : "Browse",
+    "City" : "City",
+    "Type" : "Type",
+    "Contact" : "Contact",
+    "Criterias" : "Criterias",
+    "Location" : "Location",
+    "Date" : "Date"
   }
 }
