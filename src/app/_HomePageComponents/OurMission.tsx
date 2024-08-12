@@ -57,14 +57,12 @@ const stats = [
                 /> */}
                 <blockquote className="mt-6 text-xl font-semibold leading-8 text-white">
                   <p>
-                    Consider making a financial donation to support our mission.
-                    Your contribution helps us maintain our facilities, purchase
-                    necessary equipment, and conduct outreach programs.
+                   {t("quote")}
                   </p>
                 </blockquote>
                 <figcaption className="mt-6 text-sm leading-6 text-gray-300">
-                  <strong className="font-semibold text-white">Help Us</strong>{" "}
-                  Save Lives
+                  <strong className="font-semibold text-white">{t("help 1")}</strong>{" "}
+                  {t("help 2")}
                 </figcaption>
               </figure>
             </div>
