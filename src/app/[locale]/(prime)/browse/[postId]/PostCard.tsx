@@ -104,7 +104,8 @@ export default function PostCard({
           <div className="container my-20">
             <Card>
               <div className="grid">
-                <DisplayPostData title={"Contact"} data={post.user.email} />
+                {/* <DisplayPostData title={"Contact"} data={post.user.email} /> */}
+
                 {/* <DisplayPostData title={"id"} data={post.id} /> */}
                 <DisplayPostData title={"Criterias"} data={post.criterias} />
                 <DisplayPostData title={"City"} data={post.city} />
@@ -114,6 +115,14 @@ export default function PostCard({
                   title={"date"}
                   data={`${humanReadableDate} ${formattedTime}`}
                 />
+                <div className="col-6">
+                  <Link href={"mailto:" + post.user.email}>
+                    <Button className="text-3xl font-semibold capitalize">
+                      {" "}
+                      Contact
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </Card>
           </div>
