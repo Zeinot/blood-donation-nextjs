@@ -259,7 +259,7 @@ export default function BrowseTable({ locale }: { locale: string }) {
         dataKey="id"
         // stateStorage="session"
         // stateKey="dt-state-demo-local"
-        emptyMessage={t("No posts found.")}
+        emptyMessage={t("Not_Found")}
         tableStyle={{ minWidth: "50rem" }}
       >
         {/* <Column

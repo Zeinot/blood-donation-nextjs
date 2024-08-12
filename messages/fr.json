@@ -34,6 +34,6 @@
     "Type": "Type",
     "Location": "Emplacement",
     "Date": "Date",
-    "No posts found.": "Aucun post trouvé."
+    "Not_Found": "Aucun post trouvé."
   }
 }
