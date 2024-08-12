@@ -1,14 +1,17 @@
 import { useTranslations } from "next-intl";
 
-const stats = [
-  { label: "Founded", value: "2021" },
-  { label: "Employees", value: "37" },
-  { label: "Countries", value: "12" },
-  { label: "Raised", value: "$25M" },
-];
 
-export default function OurMission({locale} : {locale : string}) {
+export default function OurMission({ locale }: { locale: string }) {
   const t = useTranslations("HomePage");
+
+
+  
+const stats = [
+  { label: t("join us title 1"), value: "2021" },
+  { label: t("join us title 2"), value: "37" },
+  { label: t("join us title 3"), value: "12" },
+  { label: t("join us title 4"), value: "$25M" },
+];
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -60,9 +63,7 @@ export default function OurMission({locale} : {locale : string}) {
                   </p>
                 </blockquote>
                 <figcaption className="mt-6 text-sm leading-6 text-gray-300">
-                  <strong className="font-semibold text-white">
-                    Help Us
-                  </strong>{" "}
+                  <strong className="font-semibold text-white">Help Us</strong>{" "}
                   Save Lives
                 </figcaption>
               </figure>
@@ -71,25 +72,15 @@ export default function OurMission({locale} : {locale : string}) {
           <div>
             <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
               <p className="text-base font-semibold leading-7 text-indigo-600">
-                Donate Blood
+                {t("donate")}
               </p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Join Us in Making a Difference
+                {t("join us")}
               </h1>
               <div className="max-w-xl">
-                <p className="mt-6">
-                  Sarah, a cancer survivor who received countless blood
-                  transfusions during her treatment. “Without the generosity of
-                  blood donors, I wouldn’t be here today,” she says. Stories
-                  like Sarah’s highlight the importance of blood donation and
-                  the real impact it has on people’s lives.
-                </p>
+                <p className="mt-6">{t("join us text 1")}</p>
                 <p className="mt-8">
-                  We believe in the power of community and the difference one
-                  person can make. Your blood donation is more than just a pint
-                  of blood; it’s a lifeline for someone in need. Together, we
-                  can ensure that blood is available for patients whenever and
-                  wherever it is needed.
+                {t("join us text 2")}  
                 </p>
                 {/* <p className="mt-8">
                   Et vitae blandit facilisi magna lacus commodo. Vitae sapien

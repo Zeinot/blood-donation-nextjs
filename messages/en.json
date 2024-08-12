@@ -1,5 +1,22 @@
 {
-    "HomePage": {
-      "title": "Hello world!"
-    }
+  "HomePage": {
+    "HeroTitle": "Giving the gift of life to someone in need.",
+    "HeroDesc": "Every two seconds, someone in the world needs blood. Whether it’s for a surgery, cancer treatment, chronic illness, or traumatic injury, the need for blood is constant. Blood donation is a simple, selfless act that can save lives. By donating blood, you are giving the gift of life to someone in need.",
+    "HeroBrowseButton": "Browse",
+    "Tastamonial": "The need for blood is constant, but the supply is not. Blood cannot be manufactured; it can only come from generous donors like you.",
+    "StatsTitle": "Trusted by centers worldwide",
+    "centers": "Centers on the platform",
+    "lives": "Lives saved",
+    "Employees": "Employees",
+    "countries": "Available Countries",
+    "donate": "Donate Blood",
+    "join us": "Join Us in Making a Difference",
+    "join us text 1": "Sarah, a cancer survivor who received countless blood transfusions during her treatment. “Without the generosity of blood donors, I wouldn’t be here today,” she says. Stories like Sarah’s highlight the importance of blood donation and the real impact it has on people’s lives.",
+    "join us text 2": "We believe in the power of community and the difference one person can make. Your blood donation is more than just a pint of blood; it’s a lifeline for someone in need. Together, we can ensure that blood is available for patients whenever and wherever it is needed.",
+    "join us title 1": "Founded",
+    "join us title 2": "Employees",
+    "join us title 3": "Countries",
+    "join us title 4": "Raised",
+    "copyright" : " 2024 Blood Donation, Inc. All rights reserved."
   }
+}

@@ -1,22 +1,25 @@
 import { useTranslations } from "next-intl";
 
-const stats = [
-  { id: 1, name: "Centers on the platform", value: "8,000+" },
-  { id: 2, name: "Lives saved", value: "1M+" },
-  { id: 3, name: "Employees", value: "37" },
-  { id: 4, name: "Available Countries", value: "12" },
-];
+
 
 export default function Stats({locale} : {locale : string}) {
 
   const t = useTranslations("HomePage");
+
+  const stats = [
+    { id: 1, name: t("centers"), value: "8,000+" },
+    { id: 2, name: t("lives"), value: "1M+" },
+    { id: 3, name: t("Employees"), value: "37" },
+    { id: 4, name: t("countries"), value: "12" },
+  ];
+
   return (
     <div className="bg-white ">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-none">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Trusted by centers worldwide
+         { t("StatsTitle")  }  
             </h2>
             {/* <p className="mt-4 text-lg leading-8 text-gray-600">
               Lorem ipsum dolor sit amet consect adipisicing possimus.

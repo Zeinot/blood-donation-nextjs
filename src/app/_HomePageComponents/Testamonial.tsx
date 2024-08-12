@@ -31,7 +31,7 @@ export default function Testamonial({locale} : {locale : string}) {
               </svg>
               <blockquote className="text-xl font-semibold leading-8 text-white sm:text-2xl sm:leading-9">
                 <p>
-                The need for blood is constant, but the supply is not. Blood cannot be manufactured; it can only come from generous donors like you.
+              {t("Tastamonial")}
                 </p>
               </blockquote>
               {/* <figcaption className="mt-8 text-base">
