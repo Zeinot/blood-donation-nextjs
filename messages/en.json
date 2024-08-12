@@ -17,9 +17,12 @@
     "join us title 2": "Employees",
     "join us title 3": "Countries",
     "join us title 4": "Raised",
-    "copyright" : " 2024 Blood Donation, Inc. All rights reserved.",
+    "copyright": " 2024 Blood Donation, Inc. All rights reserved.",
     "quote": "Consider making a financial donation to support our mission.  Your contribution helps us maintain our facilities, purchase necessary equipment, and conduct outreach programs.",
-    "help 1" : "Help Us",
-    "help 2" : "Save Lives"
+    "help 1": "Help Us",
+    "help 2": "Save Lives",
+    "header 1": "Home",
+    "header 2": "Browse",
+    "Dashboard": "Dashboard"
   }
 }

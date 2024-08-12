@@ -1,5 +1,28 @@
 {
-    "HomePage": {
-      "title": "fr world!"
-    }
+  "HomePage": {
+    "HeroTitle": "Offrir le don de la vie à quelqu'un dans le besoin.",
+    "HeroDesc": "Toutes les deux secondes, quelqu’un dans le monde a besoin de sang. Que ce soit pour une intervention chirurgicale, un traitement contre le cancer, une maladie chronique ou une blessure traumatique, le besoin de sang est constant. Le don de sang est un acte simple et altruiste qui peut sauver des vies. En donnant votre sang, vous offrez la vie à une personne dans le besoin.",
+    "HeroBrowseButton": "Parcourir",
+    "Tastamonial": "Le besoin de sang est constant, mais l’approvisionnement ne l’est pas. Le sang ne peut pas être fabriqué ; cela ne peut venir que de généreux donateurs comme vous.",
+    "StatsTitle": "Approuvé par les centres du monde entier",
+    "centers": "Centres sur la plateforme",
+    "lives": "Des vies sauvées",
+    "Employees": "Employés",
+    "countries": "Pays disponibles",
+    "donate": "Donner du sang",
+    "join us": "Rejoignez-nous pour faire la différence",
+    "join us text 1": "Sarah, une survivante du cancer qui a reçu d'innombrables transfusions sanguines pendant son traitement. « Sans la générosité des donneurs de sang, je ne serais pas là aujourd’hui », dit-elle. Des histoires comme celle de Sarah soulignent l’importance du don de sang et son impact réel sur la vie des gens.",
+    "join us text 2": "Nous croyons au pouvoir de la communauté et à la différence qu’une personne peut faire. Votre don de sang représente bien plus qu’une simple pinte de sang ; c'est une bouée de sauvetage pour quelqu'un dans le besoin. Ensemble, nous pouvons garantir que le sang soit disponible pour les patients à tout moment et en tout lieu.",
+    "join us title 1": "Fondée",
+    "join us title 2": "Employés",
+    "join us title 3": "Pays",
+    "join us title 4": "Soulevé",
+    "copyright": " 2024 Blood Donation, Inc. Tous droits réservés.",
+    "quote": "Pensez à faire un don financier pour soutenir notre mission.  Votre contribution nous aide à entretenir nos installations, à acheter l’équipement nécessaire et à mener des programmes de sensibilisation.",
+    "help 1": "Aidez-nous à",
+    "help 2": "Sauver des vies",
+    "header 1": "Accueil",
+    "header 2": "Parcourir",
+    "Dashboard": "Tableau de bord"
   }
+}

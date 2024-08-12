@@ -7,13 +7,15 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 export default function Hero({ locale }: { locale: string }) {
-  const navigation = [
-    { name: "Home", href: `/${locale}` },
-    { name: "Browse", href: `${locale}/browse` },
-  ];
+  
+ 
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const t = useTranslations("HomePage");
+  const navigation = [
+    { name: t("header 1"), href: `/${locale}` },
+    { name:  t("header 2"), href: `${locale}/browse` },
+  ];
   return (
     <div className="bg-white">
       <header className="absolute inset-x-0 top-0 z-50">
@@ -57,7 +59,7 @@ export default function Hero({ locale }: { locale: string }) {
             href={`/${locale}/dashboard`}
               className="text-sm font-semibold leading-6 text-gray-900"
             >
-              Dashboard <span aria-hidden="true">&rarr;</span>
+             { t("Dashboard")} <span aria-hidden="true">&rarr;</span>
             </Link>
           </div>
         </nav>
