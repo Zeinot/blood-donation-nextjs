@@ -26,7 +26,14 @@
     "Dashboard": "Dashboard"
   },
   "BrowsePage": {
-    "div" : "Browse Posts",
-    "search" : "Search ..."
+    "div": "Browse Posts",
+    "search": "Search ...",
+    "Home": "Home",
+    "Criterias": "Criterias",
+    "City": "City",
+    "Type": "Type",
+    "Location": "Location",
+    "Date": "Date",
+    "No posts found.": "No posts found."
   }
 }

@@ -191,7 +191,7 @@ export default function BrowseTable({ locale }: { locale: string }) {
         </IconField>
         <a href={`/${locale}`}>
           {" "}
-          <Button label="Home" icon="pi pi-home" className=" sm:min-h-[58px]" />
+          <Button label={t("Home")} icon="pi pi-home" className=" sm:min-h-[58px]" />
         </a>
       </div>
     );
@@ -259,7 +259,7 @@ export default function BrowseTable({ locale }: { locale: string }) {
         dataKey="id"
         // stateStorage="session"
         // stateKey="dt-state-demo-local"
-        emptyMessage="No posts found."
+        emptyMessage={t("No posts found.")}
         tableStyle={{ minWidth: "50rem" }}
       >
         {/* <Column
@@ -271,7 +271,7 @@ export default function BrowseTable({ locale }: { locale: string }) {
 
         <Column
           field="criterias"
-          header="Criterias"
+          header={t("Criterias")}
           className="text-overflow-ellipsis"
           sortable
           // style={{ width: "25%" }}
@@ -279,7 +279,7 @@ export default function BrowseTable({ locale }: { locale: string }) {
 
         <Column
           field="city"
-          header="City"
+          header={t("City")}
           filter
           filterField="city"
           filterPlaceholder="Filter city"
@@ -288,7 +288,7 @@ export default function BrowseTable({ locale }: { locale: string }) {
         ></Column>
         <Column
           field="type"
-          header="Type"
+          header={t("Type")}
           body={typeBodyTemplate}
           filter
           filterField="type"
@@ -298,7 +298,7 @@ export default function BrowseTable({ locale }: { locale: string }) {
         ></Column>
         <Column
           field="location"
-          header="Location"
+          header={t("Location")}
           filter
           className="text-overflow-ellipsis"
           filterField="location"
@@ -308,7 +308,7 @@ export default function BrowseTable({ locale }: { locale: string }) {
         ></Column>
         <Column
           field="date"
-          header="Date"
+          header={t("Date")}
           sortable
           body={dateBodyTemplate}
           // style={{ width: "40%" }}
