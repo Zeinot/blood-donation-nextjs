@@ -249,7 +249,7 @@ export default function BrowseTable({ locale }: { locale: string }) {
         onSelectionChange={(e) => {
           console.log(e.value.id);
 
-          router.push("/browse/" + e.value.id);
+          router.push(`/${locale}/browse/${e.value.id}`);
           setSelectedPost(e.value);
         }}
         selectionMode="single"
