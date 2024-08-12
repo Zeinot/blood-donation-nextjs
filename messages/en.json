@@ -24,5 +24,8 @@
     "header 1": "Home",
     "header 2": "Browse",
     "Dashboard": "Dashboard"
+  },
+  "BrowsePage": {
+    "div" : "Browse Posts"
   }
 }
