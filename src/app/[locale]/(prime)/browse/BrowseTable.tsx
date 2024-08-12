@@ -16,7 +16,7 @@ import { useRouter } from "next/navigation";
 import { getAllPosts } from "@/actions/actions";
 import { Button } from "primereact/button";
 
-export default function BrowseTable() {
+export default function BrowseTable({ locale }: { locale: string }) {
   const router = useRouter();
 
   const [posts, setPosts] = useState(null);
@@ -186,7 +186,7 @@ export default function BrowseTable() {
             placeholder="Search ..."
           />
         </IconField>
-        <a href="/">
+        <a href={`/${locale}`}>
           {" "}
           <Button label="Home" icon="pi pi-home" className=" sm:min-h-[58px]" />
         </a>
@@ -248,8 +248,8 @@ export default function BrowseTable() {
         selection={selectedPost}
         onSelectionChange={(e) => {
           console.log(e.value.id);
-          
-          router.push("/browse/"+e.value.id);
+
+          router.push("/browse/" + e.value.id);
           setSelectedPost(e.value);
         }}
         selectionMode="single"

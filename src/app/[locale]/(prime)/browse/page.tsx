@@ -2,7 +2,11 @@ import { Button } from "primereact/button";
 import BrowseTable from "./BrowseTable";
 import Footer from "@/app/_HomePageComponents/Footer";
 import Link from "next/link";
-export default function page() {
+
+
+import { getLocale } from "next-intl/server";
+export default async function page() {
+  const locale = await getLocale();
   return (
     <div className="m-5 flex flex-col gap-3">
       <div className="surface-0 p-4 shadow-2 border-round">
@@ -11,10 +15,10 @@ export default function page() {
           Vivamus id nisl interdum, blandit augue sit amet, eleifend mi.
         </div> */}
 
-        <BrowseTable />
+        <BrowseTable locale={locale}/>
       </div>
       <div className="mt-10">
-        <Footer />
+        <Footer locale={locale}/>
       </div>
     </div>
   );

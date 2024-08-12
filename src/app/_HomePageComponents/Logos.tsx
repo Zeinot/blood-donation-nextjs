@@ -1,4 +1,7 @@
+import { useTranslations } from "next-intl";
+
 export default function Logos({locale} : {locale : string}) {
+  const t = useTranslations("HomePage");
   return (
     <div className="bg-white ">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

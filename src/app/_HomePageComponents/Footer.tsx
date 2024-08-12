@@ -1,4 +1,5 @@
 // @ts-nocheck
+import { useTranslations } from "next-intl";
 const navigation = {
   main: [
     { name: "About", href: "#" },
@@ -74,6 +75,7 @@ const navigation = {
 };
 
 export default function Footer({locale} : {locale : string}) {
+  const t = useTranslations("HomePage");
   return (
     <footer className="bg-white">
       <div className="mx-auto max-w-7xl overflow-hidden px-6  pb-10 lg:px-8">

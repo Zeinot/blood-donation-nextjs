@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 const stats = [
   { label: "Founded", value: "2021" },
   { label: "Employees", value: "37" },
@@ -6,6 +8,7 @@ const stats = [
 ];
 
 export default function OurMission({locale} : {locale : string}) {
+  const t = useTranslations("HomePage");
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

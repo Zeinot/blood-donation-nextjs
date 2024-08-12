@@ -1,4 +1,7 @@
+import { useTranslations } from "next-intl";
+
 export default function Testamonial({locale} : {locale : string}) {
+  const t = useTranslations("HomePage");
   return (
     <div className="bg-white pb-16 pt-24 sm:pb-24 sm:pt-32 xl:pb-32">
       <div className="bg-gray-900 pb-20 sm:pb-24 xl:pb-0">

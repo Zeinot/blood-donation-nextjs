@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 const stats = [
   { id: 1, name: "Centers on the platform", value: "8,000+" },
   { id: 2, name: "Lives saved", value: "1M+" },
@@ -6,6 +8,8 @@ const stats = [
 ];
 
 export default function Stats({locale} : {locale : string}) {
+
+  const t = useTranslations("HomePage");
   return (
     <div className="bg-white ">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
