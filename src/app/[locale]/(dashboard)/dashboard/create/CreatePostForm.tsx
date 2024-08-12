@@ -12,6 +12,7 @@ import { ListboxOption, ListboxOptions } from "@headlessui/react";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
 import { useRouter } from "next/navigation";
 import { useGlobalContext } from "@/context/store";
+import { useTranslations } from "next-intl";
 
 const types = [
   { id: 1, name: "Blood" },
@@ -24,6 +25,7 @@ const formSchema = postSchema;
 export default function CreatePostForm() {
   const router = useRouter();
 
+  const t = useTranslations("Dashboard.table");
   const {
     register,
     handleSubmit,
@@ -71,7 +73,7 @@ export default function CreatePostForm() {
             htmlFor="city"
             className="block text-sm font-medium leading-6 text-gray-900"
           >
-            City
+            {t("City")}
           </label>
           <div className="mt-2">
             <input
@@ -90,7 +92,7 @@ export default function CreatePostForm() {
             htmlFor="location"
             className="block text-sm font-medium leading-6 text-gray-900"
           >
-            Location
+           { t("Location")}
           </label>
           <div className="mt-2">
             <input
@@ -108,7 +110,7 @@ export default function CreatePostForm() {
           <input hidden {...register("type")} />
           <Listbox value={selected} onChange={setSelected}>
             <Label className="block text-sm font-medium leading-6 text-gray-900">
-              Type
+              {t("Type")}
             </Label>
             <div className="relative mt-2">
               <ListboxButton className="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6">
@@ -150,7 +152,7 @@ export default function CreatePostForm() {
             htmlFor="date"
             className="block text-sm font-medium leading-6 text-gray-900"
           >
-            Date
+            {t("Date")}
           </label>
           <div className="mt-2">
             <input
@@ -169,7 +171,7 @@ export default function CreatePostForm() {
             htmlFor="criterias"
             className="block text-sm font-medium leading-6 text-gray-900"
           >
-            Criterias
+            {t("Criterias")}
           </label>
           <div className="mt-2">
             <textarea
@@ -188,7 +190,7 @@ export default function CreatePostForm() {
             type="submit"
             className="sm:w-fit rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
-            Create
+            {t("Create")}
           </button>
         ) : (
           <span className="sm:w-fit rounded-md bg-indigo-300 px-3 py-2 text-sm font-semibold text-white shadow-sm   focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">

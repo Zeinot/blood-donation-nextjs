@@ -44,9 +44,12 @@
       "Date": "Date",
       "Criterias": "Critères",
       "City": "Ville",
+      "Type": "Type",
       "Location": "Emplacement",
       "Edit": "Modifier",
-      "Delete": "Supprimer"
+      "Delete": "Supprimer",
+      "Uodate": "Mettre à jour",
+      "Create": "Créer"
     }
   }
 }

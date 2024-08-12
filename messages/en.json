@@ -45,8 +45,11 @@
       "Criterias": "Criterias",
       "City": "City",
       "Location": "Location",
+      "Type": "Type",
       "Edit": "Edit",
-      "Delete": "Delete"
+      "Delete": "Delete",
+      "Uodate": "Update",
+      "Create": "Create"
     }
   }
 }

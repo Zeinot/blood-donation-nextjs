@@ -2,7 +2,7 @@
 import { useForm, SubmitHandler } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useEffect } from "react";
+import { useEffect, useTransition } from "react";
 import { createPost, updatePost } from "@/actions/actions";
 import { postSchema } from "@/zod/Schemas";
 import { Label, Listbox, ListboxButton } from "@headlessui/react";
@@ -13,6 +13,7 @@ import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
 import { useRouter } from "next/navigation";
 import { useGlobalContext } from "@/context/store";
 import { Post } from "@prisma/client";
+import { useTranslations } from "next-intl";
 
 function convertDateFormat(originalDateString: string) {
   // Parse the input date string into a Date object
@@ -45,6 +46,7 @@ const types = [
 const formSchema = postSchema;
 
 export default function UpdatePostForm({ post }: { post: Post }) {
+  const t = useTranslations("Dashboard.table");
   console.log(post);
 
   const router = useRouter();
@@ -102,7 +104,7 @@ export default function UpdatePostForm({ post }: { post: Post }) {
             htmlFor="city"
             className="block text-sm font-medium leading-6 text-gray-900"
           >
-            City
+            {t("City")}
           </label>
           <div className="mt-2">
             <input
@@ -121,7 +123,7 @@ export default function UpdatePostForm({ post }: { post: Post }) {
             htmlFor="location"
             className="block text-sm font-medium leading-6 text-gray-900"
           >
-            Location
+            {t("Location")}
           </label>
           <div className="mt-2">
             <input
@@ -139,7 +141,7 @@ export default function UpdatePostForm({ post }: { post: Post }) {
           <input hidden {...register("type")} />
           <Listbox value={selected} onChange={setSelected}>
             <Label className="block text-sm font-medium leading-6 text-gray-900">
-              Type
+              {t("Type")}
             </Label>
             <div className="relative mt-2">
               <ListboxButton className="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6">
@@ -181,7 +183,7 @@ export default function UpdatePostForm({ post }: { post: Post }) {
             htmlFor="date"
             className="block text-sm font-medium leading-6 text-gray-900"
           >
-            Date
+            {t("Date")}
           </label>
           <div className="mt-2">
             <input
@@ -199,7 +201,7 @@ export default function UpdatePostForm({ post }: { post: Post }) {
             htmlFor="criterias"
             className="block text-sm font-medium leading-6 text-gray-900"
           >
-            Criterias
+            {t("Criterias")}
           </label>
           <div className="mt-2">
             <textarea
@@ -218,7 +220,7 @@ export default function UpdatePostForm({ post }: { post: Post }) {
             type="submit"
             className="sm:w-fit rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
-            Update
+            {t("Update")}
           </button>
         ) : (
           <span className="sm:w-fit rounded-md bg-indigo-300 px-3 py-2 text-sm font-semibold text-white shadow-sm   focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
