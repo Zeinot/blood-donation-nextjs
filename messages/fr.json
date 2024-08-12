@@ -24,5 +24,16 @@
     "header 1": "Accueil",
     "header 2": "Parcourir",
     "Dashboard": "Tableau de bord"
+  },
+  "BrowsePage": {
+    "div": "Parcourir les articles",
+    "search": "Recherche ...",
+    "Home": "Accueil",
+    "Criterias": "Critères",
+    "City": "Ville",
+    "Type": "Type",
+    "Location": "Emplacement",
+    "Date": "Date",
+    "No posts found.": "Aucun post trouvé."
   }
 }
