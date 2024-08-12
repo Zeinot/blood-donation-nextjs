@@ -71,6 +71,7 @@ export default function PostCard({
   //     date: Date;
   //     userId: string;
   // }) | null
+  const t = useTranslations("browse")
   if (post) {
     const dateString = post.date;
     const dateObject = new Date(dateString);
@@ -84,7 +85,6 @@ export default function PostCard({
       hour: "2-digit",
       minute: "2-digit",
     });
-    const t = useTranslations("browse")
     return (
       <>
         {" "}
