@@ -3,7 +3,7 @@ import { Post } from "@prisma/client";
 import Link from "next/link";
 import Pagination from "./Pagination";
 
-export default function PostsTable({ posts }: { posts: Post[] }) {
+export default function PostsTable({ posts, locale }: { posts: Post[]; locale:string }) {
   return (
     <>
       <div className="px-4 sm:px-6 lg:px-8">
@@ -94,7 +94,7 @@ export default function PostsTable({ posts }: { posts: Post[] }) {
                         </td>
                         <td className="flex justify-end gap-3 relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
                           <Link
-                            href={`/dashboard/edit/${post.id}`}
+                            href={`/${locale}/dashboard/edit/${post.id}`}
                             className="text-indigo-600 hover:text-indigo-900"
                           >
                             Edit<span className="sr-only">, {post.id}</span>

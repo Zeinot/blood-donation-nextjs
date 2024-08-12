@@ -14,15 +14,16 @@ import { classNames } from "@/utils/utils";
 import NavLink from "./NavLink";
 import MobileNavLink from "./NavLinkMobile";
 import DashboardShellHeading from "./DashboardShellHeading";
-
-export default function DashboardShell({
+import { getLocale } from "next-intl/server";
+export default async function DashboardShell({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
   const navigation = [
-    { name: "Dashboard", href: "/dashboard" },
-    { name: "Create", href: "/dashboard/create" },
+    { name: "Dashboard", href: `/${locale}/dashboard` },
+    { name: "Create", href: `/${locale}/dashboard/create` },
   ];
   const userNavigation = [
     { name: "Your Profile", href: "#" },

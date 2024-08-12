@@ -50,8 +50,10 @@ function DisplayPostData({ title, data }: any) {
 
 export default function PostCard({
   post,
+  locale,
 }: {
   post: TgetSinglePostWithUserEmail;
+  locale: string;
 }) {
   //     user: {
   //         email: string | null;
@@ -91,7 +93,7 @@ export default function PostCard({
             />
           </a>
 
-          <Link href="/browse">
+          <Link href={`/${locale}/browse`}>
             {" "}
             <Button
               label="Browse"
