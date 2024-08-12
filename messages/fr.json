@@ -35,5 +35,8 @@
     "Location": "Emplacement",
     "Date": "Date",
     "Not_Found": "Aucun post trouvé."
+  },
+  "Dashboard": {
+    "headingDashboard": "headingDashboard"
   }
 }

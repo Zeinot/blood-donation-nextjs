@@ -20,16 +20,26 @@ export default async function DashboardShell({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  let dashboardName: string;
+  let createName: string;
+
   const locale = await getLocale();
-  const navigation = [
-    { name: "Dashboard", href: `/${locale}/dashboard` },
-    { name: "Create", href: `/${locale}/dashboard/create` },
+
+  if (locale === "fr") {
+    dashboardName = "Tableau de bord";
+    createName = "Créer";
+  } else if (locale === "ar") {
+    dashboardName = "لوحة القيادة";
+    createName = "إنشاء";
+  } else {
+    dashboardName = "Dashboard";
+    createName = "Dashboard";
+  }
+  let navigation = [
+    { name: dashboardName, href: `/${locale}/dashboard` },
+    { name: createName, href: `/${locale}/dashboard/create` },
   ];
-  const userNavigation = [
-    { name: "Your Profile", href: "#" },
-    { name: "Settings", href: "#" },
-    { name: "Sign out", href: "#" },
-  ];
+ 
 
   return (
     <div className="h-full bg-gray-100">

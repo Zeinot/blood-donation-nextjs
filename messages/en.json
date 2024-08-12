@@ -35,5 +35,10 @@
     "Location": "Location",
     "Date": "Date",
     "Not_found": "No posts found."
+  },
+  "Dashboard": {
+    "headingDashboard": "Dashboard",
+    "Edit Post": "Edit Post",
+    "Create Post": "Create Post"
   }
 }
