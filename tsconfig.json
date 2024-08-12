@@ -26,7 +26,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/(prime)/browse/BrowseTable.tsx"
+    "src/app/[locale]/(prime)/browse/BrowseTable.tsx"
   ],
   "exclude": ["node_modules"]
 }
