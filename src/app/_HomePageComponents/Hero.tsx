@@ -5,6 +5,7 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import LangSwap from "./LangSwap";
 
 export default function Hero({ locale }: { locale: string }) {
   
@@ -54,13 +55,15 @@ export default function Hero({ locale }: { locale: string }) {
               </Link>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Link
+         
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-3">
+            <LangSwap />
+          <div className="flex flex-col justify-center">  <Link
             href={`/${locale}/dashboard`}
               className="text-sm font-semibold leading-6 text-gray-900"
             >
              { t("Dashboard")} <span aria-hidden="true">&rarr;</span>
-            </Link>
+            </Link></div>
           </div>
         </nav>
         <Dialog
