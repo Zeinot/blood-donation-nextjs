@@ -112,7 +112,7 @@ export default function UpdatePostForm({ post }: { post: Post }) {
               id="city"
               name="city"
               type="text"
-              placeholder={t("City")}
+              
               className="px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
             />
             <p className="text-red-600"> {errors.city?.message}</p>
@@ -131,7 +131,7 @@ export default function UpdatePostForm({ post }: { post: Post }) {
               id="location"
               name="location"
               type="text"
-              placeholder="Location ..."
+            
               className="px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
             />
             <p className="text-red-600"> {errors.location?.message}</p>

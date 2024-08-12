@@ -123,7 +123,7 @@ export default function BrowseTable({ locale }: { locale: string }) {
         itemTemplate={representativesItemTemplate}
         onChange={(e) => options.filterCallback(e.value)}
         optionLabel="name"
-        placeholder="Any"
+      
         className="p-column-filter"
       />
     );
@@ -155,8 +155,7 @@ export default function BrowseTable({ locale }: { locale: string }) {
         options={statuses}
         onChange={(e) => options.filterCallback(e.value, options.index)}
         itemTemplate={statusItemTemplate}
-        placeholder="Select One"
-        className="p-column-filter"
+          className="p-column-filter"
         showClear
       />
     );
@@ -186,7 +185,7 @@ export default function BrowseTable({ locale }: { locale: string }) {
             type="search"
             value={value || ""}
             onChange={(e) => onGlobalFilterChange(e)}
-            placeholder={t("search")}
+        
           />
         </IconField>
         <a href={`/${locale}`}>
