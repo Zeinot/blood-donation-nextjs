@@ -73,7 +73,7 @@ const navigation = {
   ],
 };
 
-export default function Footer() {
+export default function Footer({locale} : {locale : string}) {
   return (
     <footer className="bg-white">
       <div className="mx-auto max-w-7xl overflow-hidden px-6  pb-10 lg:px-8">

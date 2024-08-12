@@ -5,7 +5,7 @@ const stats = [
   { id: 4, name: "Available Countries", value: "12" },
 ];
 
-export default function Stats() {
+export default function Stats({locale} : {locale : string}) {
   return (
     <div className="bg-white ">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
