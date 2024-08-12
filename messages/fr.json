@@ -39,6 +39,14 @@
   "Dashboard": {
     "headingDashboard": "Tableau de bord",
     "Edit Post": "Modifier le poste",
-    "Create Post": "Créer un poste"
+    "Create Post": "Créer un poste",
+    "table": {
+      "Date": "Date",
+      "Criterias": "Critères",
+      "City": "Ville",
+      "Location": "Emplacement",
+      "Edit": "Modifier",
+      "Delete": "Supprimer"
+    }
   }
 }

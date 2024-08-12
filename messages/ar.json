@@ -39,6 +39,14 @@
   "Dashboard": {
     "headingDashboard": "لوحة القيادة",
     "Edit Post": "تحرير الموقف",
-    "Create Post": "إنشاء مشاركة"
+    "Create Post": "إنشاء مشاركة",
+    "table": {
+      "Date": "تاريخ",
+      "Criterias": "المعايير",
+      "City": "مدينة",
+      "Location": "موقع",
+      "Edit": "صحح",
+      "Delete": "حذف"
+    }
   }
 }
