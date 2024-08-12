@@ -33,7 +33,7 @@ export default async function DashboardShell({
     createName = "إنشاء";
   } else {
     dashboardName = "Dashboard";
-    createName = "Dashboard";
+    createName = "Create Post";
   }
   let navigation = [
     { name: dashboardName, href: `/${locale}/dashboard` },

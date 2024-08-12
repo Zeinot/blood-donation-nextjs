@@ -39,6 +39,14 @@
   "Dashboard": {
     "headingDashboard": "Dashboard",
     "Edit Post": "Edit Post",
-    "Create Post": "Create Post"
+    "Create Post": "Create Post",
+    "table": {
+      "Date": "Date",
+      "Criterias": "Criterias",
+      "City": "City",
+      "Location": "Location",
+      "Edit": "Edit",
+      "Delete": "Delete"
+    }
   }
 }

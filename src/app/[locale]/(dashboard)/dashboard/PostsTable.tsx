@@ -1,9 +1,18 @@
-import { deletePost } from "@/actions/actions";
+"use client";
+import { deleteAction, deletePost } from "@/actions/actions";
 import { Post } from "@prisma/client";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
-import Pagination from "./Pagination";
 
-export default function PostsTable({ posts, locale }: { posts: Post[]; locale:string }) {
+export default function PostsTable({
+  posts,
+  locale,
+}: {
+  posts: Post[];
+  locale: string;
+}) {
+  const t = useTranslations("Dashboard.table");
+  // alert(t("test"))
   return (
     <>
       <div className="px-4 sm:px-6 lg:px-8">
@@ -17,31 +26,31 @@ export default function PostsTable({ posts, locale }: { posts: Post[]; locale:st
                       scope="col"
                       className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0"
                     >
-                      Date
+                      {t("Date")}
                     </th>
                     <th
                       scope="col"
                       className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
                     >
-                      Criterias
+                         {t("Criterias")}
                     </th>
                     <th
                       scope="col"
                       className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
                     >
-                      City
+                      {t("City")}
                     </th>
                     <th
                       scope="col"
                       className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
                     >
-                      Location
+                        {t("Location")}
                     </th>
                     <th
                       scope="col"
                       className="relative py-3.5 pl-3 pr-4 sm:pr-0"
                     >
-                      <span className="sr-only">Edit</span>
+                      <span className="sr-only">  Edit</span>
                     </th>
                   </tr>
                 </thead>
@@ -59,7 +68,7 @@ export default function PostsTable({ posts, locale }: { posts: Post[]; locale:st
                         year: "numeric",
                         month: "short",
                         day: "numeric",
-                      },
+                      }
                     );
 
                     return (
@@ -97,19 +106,14 @@ export default function PostsTable({ posts, locale }: { posts: Post[]; locale:st
                             href={`/${locale}/dashboard/edit/${post.id}`}
                             className="text-indigo-600 hover:text-indigo-900"
                           >
-                            Edit<span className="sr-only">, {post.id}</span>
+                               {t("Edit")}<span className="sr-only">, {post.id}</span>
                           </Link>
-                          <form
-                            action={async () => {
-                              "use server";
-                              await deletePost(post.id);
-                            }}
-                          >
+                          <form action={async () => deleteAction(post.id)}>
                             <button
                               type="submit"
                               className="text-red-600 hover:text-indigo-900"
                             >
-                              Delete<span className="sr-only">, {post.id}</span>
+                              {t("Delete")}<span className="sr-only">, {post.id}</span>
                             </button>
                           </form>
                         </td>

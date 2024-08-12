@@ -70,5 +70,10 @@ export async function getSinglePostWithUserEmail(postId: string) {
   });
   return post;
 }
-export type TgetSinglePostWithUserEmail = Awaited<ReturnType<typeof getSinglePostWithUserEmail>>;
+export type TgetSinglePostWithUserEmail = Awaited<
+  ReturnType<typeof getSinglePostWithUserEmail>
+>;
 
+export async function deleteAction(id: string) {
+  await deletePost(id);
+}
