@@ -26,6 +26,7 @@
     "Dashboard": "Dashboard"
   },
   "BrowsePage": {
-    "div" : "Browse Posts"
+    "div" : "Browse Posts",
+    "search" : "Search ..."
   }
 }

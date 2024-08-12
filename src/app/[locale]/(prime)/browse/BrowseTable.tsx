@@ -15,9 +15,12 @@ import getData from "./getData";
 import { useRouter } from "next/navigation";
 import { getAllPosts } from "@/actions/actions";
 import { Button } from "primereact/button";
+import { useTranslations } from "next-intl"; 
 
 export default function BrowseTable({ locale }: { locale: string }) {
   const router = useRouter();
+  const t = useTranslations("BrowsePage");
+   
 
   const [posts, setPosts] = useState(null);
   const [filters, setFilters] = useState({
@@ -183,7 +186,7 @@ export default function BrowseTable({ locale }: { locale: string }) {
             type="search"
             value={value || ""}
             onChange={(e) => onGlobalFilterChange(e)}
-            placeholder="Search ..."
+            placeholder={t("search")}
           />
         </IconField>
         <a href={`/${locale}`}>
