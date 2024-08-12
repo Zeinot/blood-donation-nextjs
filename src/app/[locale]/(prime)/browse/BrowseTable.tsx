@@ -15,12 +15,11 @@ import getData from "./getData";
 import { useRouter } from "next/navigation";
 import { getAllPosts } from "@/actions/actions";
 import { Button } from "primereact/button";
-import { useTranslations } from "next-intl"; 
+import { useTranslations } from "next-intl";
 
 export default function BrowseTable({ locale }: { locale: string }) {
   const router = useRouter();
   const t = useTranslations("BrowsePage");
-   
 
   const [posts, setPosts] = useState(null);
   const [filters, setFilters] = useState({
@@ -123,7 +122,6 @@ export default function BrowseTable({ locale }: { locale: string }) {
         itemTemplate={representativesItemTemplate}
         onChange={(e) => options.filterCallback(e.value)}
         optionLabel="name"
-      
         className="p-column-filter"
       />
     );
@@ -155,7 +153,7 @@ export default function BrowseTable({ locale }: { locale: string }) {
         options={statuses}
         onChange={(e) => options.filterCallback(e.value, options.index)}
         itemTemplate={statusItemTemplate}
-          className="p-column-filter"
+        className="p-column-filter"
         showClear
       />
     );
@@ -185,12 +183,15 @@ export default function BrowseTable({ locale }: { locale: string }) {
             type="search"
             value={value || ""}
             onChange={(e) => onGlobalFilterChange(e)}
-        
           />
         </IconField>
         <a href={`/${locale}`}>
           {" "}
-          <Button label={t("Home")} icon="pi pi-home" className=" sm:min-h-[58px]" />
+          <Button
+            label={t("Home")}
+            icon="pi pi-home"
+            className=" sm:min-h-[58px]"
+          />
         </a>
       </div>
     );
@@ -258,7 +259,7 @@ export default function BrowseTable({ locale }: { locale: string }) {
         dataKey="id"
         // stateStorage="session"
         // stateKey="dt-state-demo-local"
-        emptyMessage={t("Not_Found")}
+        emptyMessage={" "}
         tableStyle={{ minWidth: "50rem" }}
       >
         {/* <Column
