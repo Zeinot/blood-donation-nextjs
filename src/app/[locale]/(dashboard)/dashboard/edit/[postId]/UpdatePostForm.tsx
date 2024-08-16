@@ -2,16 +2,13 @@
 import { useForm, SubmitHandler } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useEffect, useTransition } from "react";
-import { createPost, updatePost } from "@/actions/actions";
+import { useEffect } from "react";
+import { updatePost } from "@/actions/actions";
 import { postSchema } from "@/zod/Schemas";
-import { Label, Listbox, ListboxButton } from "@headlessui/react";
-
+import { Label, Listbox, ListboxButton, ListboxOption, ListboxOptions } from "@headlessui/react";
 import { useState } from "react";
-import { ListboxOption, ListboxOptions } from "@headlessui/react";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
 import { useRouter } from "next/navigation";
-import { useGlobalContext } from "@/context/store";
 import { Post } from "@prisma/client";
 import { useTranslations } from "next-intl";
 
@@ -45,7 +42,13 @@ const types = [
 
 const formSchema = postSchema;
 
-export default function UpdatePostForm({ post, locale }: { post: Post; locale:string }) {
+export default function UpdatePostForm({
+  post,
+  locale,
+}: {
+  post: Post;
+  locale: string;
+}) {
   const t = useTranslations("Dashboard.table");
   console.log(post);
 
@@ -112,7 +115,6 @@ export default function UpdatePostForm({ post, locale }: { post: Post; locale:st
               id="city"
               name="city"
               type="text"
-              
               className="px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
             />
             <p className="text-red-600"> {errors.city?.message}</p>
@@ -131,7 +133,6 @@ export default function UpdatePostForm({ post, locale }: { post: Post; locale:st
               id="location"
               name="location"
               type="text"
-            
               className="px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
             />
             <p className="text-red-600"> {errors.location?.message}</p>
@@ -224,7 +225,7 @@ export default function UpdatePostForm({ post, locale }: { post: Post; locale:st
           </button>
         ) : (
           <span className="sm:w-fit rounded-md bg-indigo-300 px-3 py-2 text-sm font-semibold text-white shadow-sm   focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-           {t("Loading")}
+            {t("Loading")}
           </span>
         )}
       </form>
