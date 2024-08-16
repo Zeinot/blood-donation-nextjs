@@ -245,6 +245,7 @@ export default function BrowseTable({ locale }: { locale: string }) {
         value={posts}
         paginator
         rows={15}
+        
         header={header}
         filters={filters}
         onFilter={(e) => setFilters(e.filters)}
