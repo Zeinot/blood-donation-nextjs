@@ -282,7 +282,7 @@ export default function BrowseTable({ locale }: { locale: string }) {
           header={t("City")}
           filter
           filterField="city"
-          filterPlaceholder="Filter city"
+          filterPlaceholder={t("Filter city")}
           sortable
           // style={{ width: "25%" }}
         ></Column>
@@ -292,7 +292,7 @@ export default function BrowseTable({ locale }: { locale: string }) {
           body={typeBodyTemplate}
           filter
           filterField="type"
-          filterPlaceholder="Filter type"
+          filterPlaceholder={t("Filter type")}
           sortable
           // style={{ width: "25%" }}
         ></Column>
@@ -302,7 +302,7 @@ export default function BrowseTable({ locale }: { locale: string }) {
           filter
           className="text-overflow-ellipsis"
           filterField="location"
-          filterPlaceholder="Search Location"
+          filterPlaceholder={t("Search Location")}
           sortable
           // style={{ width: "25%" }}
         ></Column>

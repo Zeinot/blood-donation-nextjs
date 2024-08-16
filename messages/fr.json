@@ -34,7 +34,10 @@
     "Type": "Type",
     "Location": "Emplacement",
     "Date": "Date",
-    "Not_Found": "Aucun post trouvé."
+    "Not_Found": "Aucun post trouvé.",
+    "Filter type" : "Type de filtre",
+    "Search Location":"Rechercher un emplacement",
+    "Filter city":"Filtrer la ville"
   },
   "Dashboard": {
     "headingDashboard": "Tableau de bord",
@@ -49,7 +52,8 @@
       "Edit": "Modifier",
       "Delete": "Supprimer",
       "Uodate": "Mettre à jour",
-      "Create": "Créer"
+      "Create": "Créer",
+       "Loading": "Chargement ..."
     }
   }, "browse": {
     "Browse" : "Parcourir",

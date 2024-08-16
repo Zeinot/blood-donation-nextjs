@@ -34,7 +34,10 @@
     "Type": "النوع",
     "Location": "موقع",
     "Date": "تاريخ",
-    "Not_Found": "لم يتم العثور على أي مشاركات."
+    "Not_Found": "لم يتم العثور على أي مشاركات.",
+    "Filter type" : "نوع الفلتر",
+    "Search Location":"موقع البحث",
+    "Filter city":"مدينة التصفية"
   },
   "Dashboard": {
     "headingDashboard": "لوحة القيادة",
@@ -49,7 +52,8 @@
       "Delete": "حذف",
       "Type": "نوع",
       "Update": "تحديث",
-      "Create": "أحدث"
+      "Create": "أحدث",
+       "Loading": "تحميل ..."
     }
   }, "browse": {
     "Browse" : "تصفح",

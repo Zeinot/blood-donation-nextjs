@@ -34,7 +34,11 @@
     "Type": "Type",
     "Location": "Location",
     "Date": "Date",
-    "Not_found": "No posts found."
+    "Not_found": "No posts found.",
+    
+    "Filter type" : "Filter type",
+    "Search Location":"Search Location",
+    "Filter city":"Filter city"
   },
   "Dashboard": {
     "headingDashboard": "Dashboard",
