@@ -49,7 +49,8 @@
       "Edit": "Edit",
       "Delete": "Delete",
       "Uodate": "Update",
-      "Create": "Create"
+      "Create": "Create",
+      "Loading": "Loading ..."
     }
   },
   "browse": {

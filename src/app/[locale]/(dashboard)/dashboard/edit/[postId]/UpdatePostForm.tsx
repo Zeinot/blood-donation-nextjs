@@ -45,7 +45,7 @@ const types = [
 
 const formSchema = postSchema;
 
-export default function UpdatePostForm({ post }: { post: Post }) {
+export default function UpdatePostForm({ post, locale }: { post: Post; locale:string }) {
   const t = useTranslations("Dashboard.table");
   console.log(post);
 
@@ -77,7 +77,7 @@ export default function UpdatePostForm({ post }: { post: Post }) {
       response.map((issue) => {
         setError(issue.path[0] as any, { message: issue.message });
       });
-    } else router.push("/dashboard");
+    } else router.push(`/${locale}/dashboard`);
   }
 
   const [selected, setSelected] = useState(types[2]);
@@ -224,7 +224,7 @@ export default function UpdatePostForm({ post }: { post: Post }) {
           </button>
         ) : (
           <span className="sm:w-fit rounded-md bg-indigo-300 px-3 py-2 text-sm font-semibold text-white shadow-sm   focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-            Loading ...
+           {t("Loading")}
           </span>
         )}
       </form>

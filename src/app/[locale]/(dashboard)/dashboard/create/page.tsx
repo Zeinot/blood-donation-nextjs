@@ -1,9 +1,11 @@
+import { getLocale } from "next-intl/server";
 import CreatePostForm from "./CreatePostForm";
 
-export default function page() {
+export default async function page() {
+  const locale = await getLocale();
   return (
     <div>
-      <CreatePostForm />
+      <CreatePostForm locale={locale} />
     </div>
   );
 }
