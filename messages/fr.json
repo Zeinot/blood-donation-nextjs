@@ -35,9 +35,9 @@
     "Location": "Emplacement",
     "Date": "Date",
     "Not_Found": "Aucun post trouvé.",
-    "Filter type" : "Type de filtre",
+    "Filter type" : "Filtrer par type",
     "Search Location":"Rechercher un emplacement",
-    "Filter city":"Filtrer la ville"
+    "Filter city":"Filtrer par ville"
   },
   "Dashboard": {
     "headingDashboard": "Tableau de bord",
